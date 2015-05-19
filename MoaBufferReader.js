@@ -56,6 +56,23 @@ var MoaBufferReader = (function(){
     return buf;
   }
 
+  MoaBufferReader.prototype.readFloat = function(){
+    var _this = this;
+    return (_this._endian?_this.readFloatBE():_this.readFloatLE());
+  }
+  MoaBufferReader.prototype.readFloatBE = function(){
+    var _this = this;
+    var buf = _this._raw.readFloatBE(_this._offset);
+    _this._read(4);
+    return buf;
+  }
+  MoaBufferReader.prototype.readFloatLE = function(){
+    var _this = this;
+    var buf = _this._raw.readFloatLE(_this._offset);
+    _this._read(4);
+    return buf;
+  }
+
   MoaBufferReader.prototype.readDouble = function(){
     var _this = this;
     return (_this._endian?_this.readDoubleBE():_this.readDoubleLE());
