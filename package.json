@@ -1,0 +1,20 @@
+{
+  "name": "MoaBufferReader",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Moa Chung"
+  },
+  "homepage": "https://github.com/honomoa/MoaBufferReader/",
+  "keywords": [
+    "moa",
+    "buffer",
+    "reader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/honomoa/MoaBufferReader.git"
+  },
+  "dependencies": {
+  }
+}
